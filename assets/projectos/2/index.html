@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<title>Lorem Ipsum</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <!-- Logo -->
+        <h1>
+        	<img src="img/logo.png" alt="Lorem Ipsum"/>
+        </h1>
+        <!-- Menu -->
+        <div id="menu-container">
+            <nav id="main-menu">
+            	<a href="#header">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contacts">Contacts</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section 1 -->
+    <section class="home-section" id="about">
+        <div class="container">
+            <header>
+                <h2>
+                    About
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat faucibus est, ut dignissim lacus tempor a. Ut porta lectus sit amet ante eleifend, elementum porttitor lectus pretium. Nulla eleifend, risus eget suscipit facilisis, nulla diam imperdiet turpis, et vestibulum nisi elit sed velit. Vestibulum gravida accumsan eros, vel pulvinar diam sagittis sit amet.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat faucibus est,
+                    ut dignissim lacus tempor a. Ut porta lectus sit amet ante eleifend, elementum porttitor lectus pretium.
+                </p>
+            </header>
+        </div>
+    </section>
+
+    <section class="home-section" id="projects">
+        <div class="container">
+            <header>
+                <h2>
+                    Projects
+                </h2>
+            </header>
+
+            <div class="buttons-container">
+                <div class="project-button active-button" data-target="all">
+                    All
+                </div>
+                <div class="project-button" data-target="branding">
+                    Branding
+                </div>
+                <div class="project-button" data-target="design">
+                    Design
+                </div>
+                <div class="project-button" data-target="development">
+                    Development
+                </div>
+            </div>
+
+            <div class="projects-container clearfix">
+                <img src="img/project1.jpg" class="project design" data-category="branding"/>
+                <img src="img/project2.jpg" class="project" data-category="design"/>
+                <img src="img/project3.jpg" class="project" data-category="development"/>
+                <img src="img/project4.jpg" class="project" data-category="design"/>
+                <img src="img/project5.jpg" class="project" data-category="design"/>
+                <img src="img/project6.jpg" class="project" data-category="branding"/>
+                <img src="img/project7.jpg" class="project" data-category="design"/>
+                <img src="img/project8.jpg" class="project" data-category="development"/>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="home-section" id="contacts">
+        <div class="container">
+            <header>
+                <h2>
+                    Contact Us
+                </h2>
+            </header>
+
+            <form id="contact-form">
+                <input type="text" name="name" id="form-name" placeholder="Name" required/>
+                <input type="email" name="email" placeholder="Email" required/>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <input type="submit" value="Send" />
+            </form>
+
+            <div id="contact-message">
+                Thank you for contacting <span>Tom</span>.
+                <br />
+                Wee'll get back to you as soon as possible.
+
+            </div>
+
+        </div>
+    </section>
+
+    <script type="text/javascript" src="js/jquery3.1.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

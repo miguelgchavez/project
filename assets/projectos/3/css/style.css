@@ -1,0 +1,99 @@
+/*** Reset ***/
+*{box-sizing: border-box;}
+body{margin:0;font-family: 'Raleway', sans-serif;font-size:16px;}
+img{max-width:100%;}
+a{text-decoration:none;color:inherit;}
+h1,h2,h3{margin:0;}
+figure{margin:0;}
+
+/*** Helper ***/
+.left{float:left;}
+.right{float:right;}
+.clearfix:after{content:'.';clear:both;display:block;height:0;visibility:hidden;}
+.text-center{text-align:center;}
+.text-left{text-align:left;}
+.text-right{text-align:right;}
+
+
+/*** Grid ***/
+.container{max-width:960px;margin:0 auto;padding:0 15px;}
+.row{margin:0 -15px;}
+.row:after{content:'.';clear:both;display:block;height:0;visibility:hidden;}
+.col{padding:0 15px;min-height:1px;}
+.col1{width:8.333%;}
+.col2{width:16.667%;}
+.col3{width:25%;}
+.col4{width:33.333%;}
+.col5{width:41.667%;}
+.col6{width:50%;}
+.col7{width:58.33%;}
+.col8{width:66.667%;}
+.col9{width:75%;}
+.col10{width:83.333%;}
+.col11{width:91.667%;}
+.col12{width:100%;}
+
+
+/*** Medium ***/
+@media screen and (max-width:768px){
+
+	/*** M Grid ***/
+	.m-col1{width:8.333%;}
+	.m-col2{width:16.667%;}
+	.m-col3{width:25%;}
+	.m-col4{width:33.333%;}
+	.m-col5{width:41.667%;}
+	.m-col6{width:50%;}
+	.m-col7{width:58.33%;}
+	.m-col8{width:66.667%;}
+	.m-col9{width:75%;}
+	.m-col10{width:83.333%;}
+	.m-col11{width:91.667%;}
+	.m-col12{width:100%;}
+
+}
+
+/*** Small ***/
+@media screen and (max-width:480px){
+
+	/*** S Grid ***/
+	.s-col1{width:8.333%;}
+	.s-col2{width:16.667%;}
+	.s-col3{width:25%;}
+	.s-col4{width:33.333%;}
+	.s-col5{width:41.667%;}
+	.s-col6{width:50%;}
+	.s-col7{width:58.33%;}
+	.s-col8{width:66.667%;}
+	.s-col9{width:75%;}
+	.s-col10{width:83.333%;}
+	.s-col11{width:91.667%;}
+	.s-col12{width:100%;}
+
+}
+
+/*** Header  ***/
+.main-header{position:fixed;width:100%;top:0;padding:1em 0;color:#FFF;z-index:99;transition:0.3s;}
+.pink-header{background:#F50057;}
+.main-menu{padding-top:0.5em;}
+.main-menu a{margin-left:1em;}
+
+/*** Sections ***/
+.home-section{position:relative;height:100vh;perspective:500px; }
+.home-section header{text-align:center;position:absolute;width:100%;top:50%;transform:translateY(-50%);}
+.home-section h2{font-size:3em;}
+.home-section h3{font-size:2em;}
+
+/*** Intro ***/
+#intro{background:#C51162;overflow:hidden;}
+#intro h2{color:#FFF;}
+#intro h3{color:#FF80AB;}
+
+
+#about{background:#FF4081;color:#FFF;}
+
+#services{background:#880E4F;color:#FFF;}
+.services-icons{margin-top:2em;}
+.services-icons i{font-size:4em;margin:0 0.5em;display:inline-block;}
+
+#contacts{background:#F06292;color:#FFF;}

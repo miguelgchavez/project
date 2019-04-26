@@ -1,0 +1,206 @@
+/* Reset */
+
+html {height: 100%;}
+img {max-width: 100%; display: block}
+* {box-sizing: border-box;}
+
+
+/* Estilos Gerais */
+
+body {
+    margin: 0px;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.7;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 5vw;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    height: 80vh;
+    padding: 20px;
+    background: url('../images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 80px;
+    width: 300px;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+}
+
+.logo span {
+    color:#B6B994
+}
+
+a.button {
+    border: 1px solid #fff;
+    padding: 10px 40px;
+    text-transform: uppercase;
+}
+
+
+
+/* Grelha */
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:460px 230px 230px 460px;
+    
+    /* fazemos uma grelha com as rows definidas porque neste layout queremos que fique tudo alinhado. se não dermos medidas as rows ajustam-se automaticamente ao conteúdo 
+    
+    para uma altura responsive podemos usar percentagens do ecrã:
+    grid-template-rows:40vh 20vh 20vh 460px;
+    
+    */
+}
+
+main > div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    /* Usamos flex para poder alinhar todo o conteúdo ao centro horizontal e vertical da div. Usamos o flex-flow: column para que os elementos dentro dadiv fiquem uns por baixo dos outros.  */
+}
+
+main > div p {
+    padding: 30px;
+}
+
+main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img.grayscale {
+   filter: grayscale(100%) brightness(50%);
+}
+
+
+
+.ourservices {
+    position: absolute;
+    z-index: 9999;
+}
+
+.span-2 {
+     grid-column: auto / span 2;
+}
+
+.about-us {
+    background: #246457;
+}
+
+
+.blue-bg {
+    background:#011526;
+    grid-row: 3 / 4;
+}
+
+.green-bg {
+    background: #B7BFB0;
+    grid-row: 2 / 4;
+}
+
+.temperature {
+    background: #686D2D;
+}
+
+
+.light-green-bg {
+    background: #72968A;
+    text-align: left;
+}
+
+.salmon-bg {
+    background: #F77D6F;
+}
+
+.salmon-bg ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+.salmon-bg ul li {
+    margin-bottom: 20px;
+}
+
+
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+    
+    .logo {
+        width: 60%;
+        left: 20px;
+    }
+    
+    h1 {
+        font-size: 18px;
+    }
+    
+    
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: unset;
+        grid-auto-rows: 340px;
+        
+        /* deixamos de ter rows definidas e dizemos que queremos rows automáticas de exactamente 340px de altura. */
+    }
+    
+    main > div p {
+        padding: 20px;
+    }
+    
+    .blue-bg, .green-bg {
+        grid-row: auto;
+    }
+
+    .span-2 {
+        grid-column: auto;
+    }
+    
+    .photo2 {
+        grid-row: 10;
+        /* Para não termos duas imagens seguidas no final, mudamos esta de sítio */
+    }
+}
